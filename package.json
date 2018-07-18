@@ -1,0 +1,27 @@
+{
+  "name": "rest_api",
+  "version": "1.0.0",
+  "description": "An app to work through rest api ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bvreeman/REST_API.git"
+  },
+  "author": "Brandon Vreeman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bvreeman/REST_API/issues"
+  },
+  "homepage": "https://github.com/bvreeman/REST_API#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
