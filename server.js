@@ -4,4 +4,6 @@ const app = require('./app');
 
 const server = http.createServer(app);
 
-server.listen(PORT);
+server.listen(PORT, function() {
+    console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+  });
