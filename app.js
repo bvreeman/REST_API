@@ -10,6 +10,8 @@ const orderRoutes = require('./api/routes/orders');
 const dbUri = process.env.MONGODB_URI || "mongodb://localhost:27017/rest-api-shop";
 mongoose.connect(dbUri).then(() => console.log('connected to DB!')).catch((err) => console.log(err));
 
+mongoose.Promise = global.Promise;
+
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
