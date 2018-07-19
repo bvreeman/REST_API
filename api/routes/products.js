@@ -23,7 +23,7 @@ router.get('/', (req, res, next) => {
                 })
             }
             // if (docs.length >= 0) {
-                res.status(200).json(docs)
+                res.status(200).json(response)
             // } 
             // else {
             //     res.status(404).json({
@@ -54,7 +54,7 @@ router.post('/', (req, res, next) => {
                 createdProduct: {
                     name: result.name,
                     price: result.price,
-                    _id: results._id,
+                    _id: result._id,
                     request: {
                         type: 'GET',
                         url: 'http:/localhost:3000/products/' + result._id
