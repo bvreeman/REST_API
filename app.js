@@ -13,6 +13,8 @@ mongoose.connect(dbUri).then(() => console.log('connected to DB!')).catch((err) 
 mongoose.Promise = global.Promise;
 
 app.use(morgan('dev'));
+
+app.use('/upload', express.static('upload'));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
